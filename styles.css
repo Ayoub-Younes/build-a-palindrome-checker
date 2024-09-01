@@ -1,0 +1,97 @@
+html {
+height: 100%;
+overflow: hidden;
+}
+
+@media (min-width:500px){
+  #navbar {
+    font-size: 1.2em;
+  }
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  background-image: url('imgs/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f5f5f5;
+  
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  margin: 180px auto;
+  width: 50%;
+}
+
+.container img{
+  margin: auto;
+  width: 150px;;
+  height: auto;
+}
+
+
+#text-input {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 2px solid #8e7cc3;
+  outline: none;
+  font-size: 1em;
+  width: 300px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#text-input:focus {
+  border-color: #ea53c2;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#check-btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 25px;
+  border: 2px solid #8e7cc3;
+  background: linear-gradient(135deg, #8e7cc3, #ea53c2);
+  opacity: 0.8;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#check-btn:hover {
+  opacity: 1;
+}
+
+#result{
+  max-height: 60px;
+  overflow: auto;
+  display: block;
+  margin: 25px 100px;
+  word-wrap: break-word;
+}
+
+.palindrome-definition {
+  width: 70%;
+  border-radius: 10px;
+  background-color:  #cbdff9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 40px auto;
+}
+
+.palindrome-definition p {
+  font-family: 'Libre Baskerville';
+  margin: 25px;
+  color:#464545;
+}
